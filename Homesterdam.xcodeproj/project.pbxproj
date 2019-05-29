@@ -14,6 +14,9 @@
 		9A7D951B229F072A00F7A89E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A7D9519229F072A00F7A89E /* LaunchScreen.storyboard */; };
 		9A7D9526229F072A00F7A89E /* HomesterdamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7D9525229F072A00F7A89E /* HomesterdamTests.swift */; };
 		9A7D9531229F072A00F7A89E /* HomesterdamUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7D9530229F072A00F7A89E /* HomesterdamUITests.swift */; };
+		E1D17C717106D92D699A2B0D /* libPods-HomesterdamUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C4C45CB077BAFD6A3C6A18B4 /* libPods-HomesterdamUITests.a */; };
+		F77B284E364C09AAFCBEC417 /* Pods_Homesterdam.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED58DBAE26AFBE95F796ABA1 /* Pods_Homesterdam.framework */; };
+		F8AFA2BF291F108B0CF0DFE3 /* libPods-HomesterdamTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB9883AB40DE345B208287F /* libPods-HomesterdamTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		13D709322FA3F321EA6E42A0 /* Pods-HomesterdamUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomesterdamUITests.debug.xcconfig"; path = "Target Support Files/Pods-HomesterdamUITests/Pods-HomesterdamUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		360892AC04FC97EE1EC1B8CB /* Pods-HomesterdamUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomesterdamUITests.release.xcconfig"; path = "Target Support Files/Pods-HomesterdamUITests/Pods-HomesterdamUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4D81C73DE89CE9E03469133C /* Pods-Homesterdam.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Homesterdam.release.xcconfig"; path = "Target Support Files/Pods-Homesterdam/Pods-Homesterdam.release.xcconfig"; sourceTree = "<group>"; };
+		856B1515FDAD8D043AC8C6AC /* Pods-HomesterdamTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomesterdamTests.debug.xcconfig"; path = "Target Support Files/Pods-HomesterdamTests/Pods-HomesterdamTests.debug.xcconfig"; sourceTree = "<group>"; };
+		85E45E424E220B08D25C7BEB /* Pods-Homesterdam.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Homesterdam.debug.xcconfig"; path = "Target Support Files/Pods-Homesterdam/Pods-Homesterdam.debug.xcconfig"; sourceTree = "<group>"; };
+		8EB222E7FB840310771E1CDA /* Pods-HomesterdamTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomesterdamTests.release.xcconfig"; path = "Target Support Files/Pods-HomesterdamTests/Pods-HomesterdamTests.release.xcconfig"; sourceTree = "<group>"; };
 		9A7D950D229F072700F7A89E /* Homesterdam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Homesterdam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A7D9510229F072700F7A89E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9A7D9512229F072700F7A89E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +56,9 @@
 		9A7D952C229F072A00F7A89E /* HomesterdamUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HomesterdamUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A7D9530229F072A00F7A89E /* HomesterdamUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomesterdamUITests.swift; sourceTree = "<group>"; };
 		9A7D9532229F072A00F7A89E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4C45CB077BAFD6A3C6A18B4 /* libPods-HomesterdamUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HomesterdamUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEB9883AB40DE345B208287F /* libPods-HomesterdamTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HomesterdamTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED58DBAE26AFBE95F796ABA1 /* Pods_Homesterdam.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Homesterdam.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F77B284E364C09AAFCBEC417 /* Pods_Homesterdam.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8AFA2BF291F108B0CF0DFE3 /* libPods-HomesterdamTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1D17C717106D92D699A2B0D /* libPods-HomesterdamUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +96,8 @@
 				9A7D9524229F072A00F7A89E /* HomesterdamTests */,
 				9A7D952F229F072A00F7A89E /* HomesterdamUITests */,
 				9A7D950E229F072700F7A89E /* Products */,
+				C04384D2BBC46D353BE476CF /* Pods */,
+				D95E9857435414A6EA4431B9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +142,30 @@
 			path = HomesterdamUITests;
 			sourceTree = "<group>";
 		};
+		C04384D2BBC46D353BE476CF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				85E45E424E220B08D25C7BEB /* Pods-Homesterdam.debug.xcconfig */,
+				4D81C73DE89CE9E03469133C /* Pods-Homesterdam.release.xcconfig */,
+				856B1515FDAD8D043AC8C6AC /* Pods-HomesterdamTests.debug.xcconfig */,
+				8EB222E7FB840310771E1CDA /* Pods-HomesterdamTests.release.xcconfig */,
+				13D709322FA3F321EA6E42A0 /* Pods-HomesterdamUITests.debug.xcconfig */,
+				360892AC04FC97EE1EC1B8CB /* Pods-HomesterdamUITests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D95E9857435414A6EA4431B9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ED58DBAE26AFBE95F796ABA1 /* Pods_Homesterdam.framework */,
+				CEB9883AB40DE345B208287F /* libPods-HomesterdamTests.a */,
+				C4C45CB077BAFD6A3C6A18B4 /* libPods-HomesterdamUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +173,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9A7D9535229F072A00F7A89E /* Build configuration list for PBXNativeTarget "Homesterdam" */;
 			buildPhases = (
+				D81B15A848898E5B3C5E581A /* [CP] Check Pods Manifest.lock */,
 				9A7D9509229F072700F7A89E /* Sources */,
 				9A7D950A229F072700F7A89E /* Frameworks */,
 				9A7D950B229F072700F7A89E /* Resources */,
+				E6ACD29E36950B9ADB5C2E3C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +192,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9A7D9538229F072A00F7A89E /* Build configuration list for PBXNativeTarget "HomesterdamTests" */;
 			buildPhases = (
+				F9A79EA2C27CFCA9FF4E3EB7 /* [CP] Check Pods Manifest.lock */,
 				9A7D951D229F072A00F7A89E /* Sources */,
 				9A7D951E229F072A00F7A89E /* Frameworks */,
 				9A7D951F229F072A00F7A89E /* Resources */,
@@ -167,6 +211,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9A7D953B229F072A00F7A89E /* Build configuration list for PBXNativeTarget "HomesterdamUITests" */;
 			buildPhases = (
+				3126E8186FD948B33B933D8B /* [CP] Check Pods Manifest.lock */,
 				9A7D9528229F072A00F7A89E /* Sources */,
 				9A7D9529229F072A00F7A89E /* Frameworks */,
 				9A7D952A229F072A00F7A89E /* Resources */,
@@ -250,6 +295,92 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3126E8186FD948B33B933D8B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HomesterdamUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D81B15A848898E5B3C5E581A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Homesterdam-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E6ACD29E36950B9ADB5C2E3C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Homesterdam/Pods-Homesterdam-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Homesterdam/Pods-Homesterdam-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Homesterdam/Pods-Homesterdam-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9A79EA2C27CFCA9FF4E3EB7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HomesterdamTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9A7D9509229F072700F7A89E /* Sources */ = {
@@ -430,6 +561,7 @@
 		};
 		9A7D9536229F072A00F7A89E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 85E45E424E220B08D25C7BEB /* Pods-Homesterdam.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -447,6 +579,7 @@
 		};
 		9A7D9537229F072A00F7A89E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D81C73DE89CE9E03469133C /* Pods-Homesterdam.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -464,6 +597,7 @@
 		};
 		9A7D9539229F072A00F7A89E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 856B1515FDAD8D043AC8C6AC /* Pods-HomesterdamTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -484,6 +618,7 @@
 		};
 		9A7D953A229F072A00F7A89E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8EB222E7FB840310771E1CDA /* Pods-HomesterdamTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -504,6 +639,7 @@
 		};
 		9A7D953C229F072A00F7A89E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13D709322FA3F321EA6E42A0 /* Pods-HomesterdamUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -523,6 +659,7 @@
 		};
 		9A7D953D229F072A00F7A89E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 360892AC04FC97EE1EC1B8CB /* Pods-HomesterdamUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
