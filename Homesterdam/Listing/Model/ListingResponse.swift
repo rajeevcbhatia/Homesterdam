@@ -32,7 +32,9 @@ struct Listing: Codable {
     let makelaarNaam: String
     let postcode: String
     let url: String
+    let woonoppervlakte: Int
     let verkoopStatus: String
+    let woonplaats: String
     
     enum CodingKeys: String, CodingKey {
         case aangebodenSindsTekst = "AangebodenSindsTekst"
@@ -48,6 +50,8 @@ struct Listing: Codable {
         case postcode = "Postcode"
         case url = "URL"
         case verkoopStatus = "VerkoopStatus"
+        case woonoppervlakte = "Woonoppervlakte"
+        case woonplaats = "Woonplaats"
     }
 }
 

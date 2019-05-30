@@ -140,8 +140,8 @@
 		9A7D950F229F072700F7A89E /* Homesterdam */ = {
 			isa = PBXGroup;
 			children = (
-				9A7D9547229F341400F7A89E /* Listing */,
 				9A7D953E229F0BA600F7A89E /* Base */,
+				9A7D9547229F341400F7A89E /* Listing */,
 			);
 			path = Homesterdam;
 			sourceTree = "<group>";

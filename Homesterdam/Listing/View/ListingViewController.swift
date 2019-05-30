@@ -12,9 +12,16 @@ class ListingViewController: BaseViewController {
     
     private let presenter: ListingPresentable
     private var listings = [Listing]()
-    private let rowHeight: CGFloat = 100
+    private let rowHeight: CGFloat = 250
 
-    @IBOutlet weak var listingsTableView: UITableView!
+    @IBOutlet weak var listingsTableView: UITableView! {
+        didSet {
+            listingsTableView.dataSource = self
+            listingsTableView.delegate = self
+            listingsTableView.prefetchDataSource = self
+            listingsTableView.register(UINib(nibName: ListingTableViewCell.reuseIdentifier, bundle: nil), forCellReuseIdentifier: ListingTableViewCell.reuseIdentifier)
+        }
+    }
     
     @IBAction func tuinSwitchValueChanged(_ sender: UISwitch) {
     }

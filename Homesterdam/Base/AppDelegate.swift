@@ -14,8 +14,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
         
-        
+        showListings()
         return true
+    }
+    
+    private func showListings() {
+        let listingPresenter = ListingPresenter(listingService: ListingNetworkService())
+        let listingVC = ListingViewController(presenter: listingPresenter)
+        let navController = UINavigationController(rootViewController: listingVC)
+        window?.rootViewController = navController
     }
 }
 
