@@ -10,7 +10,7 @@ import Foundation
 
 class ListingNetworkService: ListingService {
     
-    func fetchNextPage(path: String?, completion: @escaping (Result<ListingResponse, ConnectionError>) -> Void) {
+    func fetchListings(pageNumber: Int, hasTuin: Bool, completion: @escaping (Result<ListingResponse, ConnectionError>) -> Void) {
         
 //        let path = path ?? URLBuilder.listings.path
         let path = "http://partnerapi.funda.nl/feeds/Aanbod.svc/json/ac1b0b1572524640a0ecc54de453ea9f/?type=koop&zo=/amsterdam/tuin/&page=1&pageSize=25"

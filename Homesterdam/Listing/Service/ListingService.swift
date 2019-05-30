@@ -10,6 +10,6 @@ import Foundation
 
 protocol ListingService {
     
-    func fetchNextPage(path: String?, completion: @escaping (Result<ListingResponse, ConnectionError>) -> Void)
+    func fetchListings(pageNumber: Int, hasTuin: Bool, completion: @escaping (Result<ListingResponse, ConnectionError>) -> Void)
     
 }

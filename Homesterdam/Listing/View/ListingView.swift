@@ -12,6 +12,4 @@ protocol ListingView: BaseView {
     
     init(presenter: ListingPresentable)
     func add(listings: [Listing])
-    
-    func showDetails(listing: Listing)
 }

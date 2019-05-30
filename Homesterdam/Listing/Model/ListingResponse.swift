@@ -53,7 +53,7 @@ struct Listing: Codable {
 
 struct Paging: Codable {
     let aantalPaginas, huidigePagina: Int
-    let volgendeURL: String
+    let volgendeURL: String?
     
     enum CodingKeys: String, CodingKey {
         case aantalPaginas = "AantalPaginas"

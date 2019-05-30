@@ -9,7 +9,8 @@
 import Foundation
 
 class ListingPresenter: ListingPresentable {
-    var nextPagePath: String?
+    var currentPageNumber = 1
+    private var hasTuin = false
     
     internal let listingService: ListingService
     weak private var listingView: ListingView?
@@ -30,14 +31,11 @@ class ListingPresenter: ListingPresentable {
         fetchNextPage()
     }
     
-    func didSelect(listing: Listing) {
-        listingView?.showDetails(listing: listing)
-    }
-    
     private func fetchNextPage() {
         shouldNotifyOnScrollToEnd = false
         
-        listingService.fetchNextPage(path: nextPagePath) { [weak self] (result) in
+        
+        listingService.fetchListings(pageNumber: currentPageNumber, hasTuin: hasTuin) { [weak self] (result) in
             self?.listingView?.hideLoader()
             guard let response = try? result.get() else {
                 self?.showAlertWithRetry()
@@ -46,9 +44,11 @@ class ListingPresenter: ListingPresentable {
             }
             
             let listings = response.listings
-            self?.nextPagePath = response.paging.volgendeURL
+            if let _ = response.paging.volgendeURL {
+                self?.currentPageNumber += 1
+            }
             
-            self?.shouldNotifyOnScrollToEnd = self?.nextPagePath != nil
+            self?.shouldNotifyOnScrollToEnd = response.paging.volgendeURL != nil
             
             self?.listingView?.add(listings: listings)
         }

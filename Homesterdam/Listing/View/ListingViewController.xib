@@ -12,6 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ListingViewController" customModule="Homesterdam" customModuleProvider="target">
             <connections>
+                <outlet property="listingsTableView" destination="2CU-o5-504" id="k8u-MN-DrK"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -19,7 +20,48 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="MbO-ht-qmg">
+                    <rect key="frame" x="16" y="60" width="105" height="59.5"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Only with tuin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uhq-9I-H38">
+                            <rect key="frame" x="0.0" y="0.0" width="105" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="aFT-9N-pAB">
+                            <rect key="frame" x="28" y="28.5" width="51" height="31"/>
+                            <connections>
+                                <action selector="tuinSwitchValueChanged:" destination="-1" eventType="valueChanged" id="jFv-xj-uJI"/>
+                            </connections>
+                        </switch>
+                    </subviews>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y9n-22-Xmo">
+                    <rect key="frame" x="232" y="72" width="162" height="36"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal" title="View Makelaars -&gt;"/>
+                    <connections>
+                        <action selector="viewMakelaarsAction:" destination="-1" eventType="touchUpInside" id="rp2-ly-BBX"/>
+                    </connections>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="2CU-o5-504">
+                    <rect key="frame" x="0.0" y="139.5" width="414" height="722.5"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="MbO-ht-qmg" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="JNb-Ts-pBs"/>
+                <constraint firstItem="MbO-ht-qmg" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="M3w-vn-iHR"/>
+                <constraint firstItem="2CU-o5-504" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Nn2-Sp-CA2"/>
+                <constraint firstItem="2CU-o5-504" firstAttribute="top" secondItem="MbO-ht-qmg" secondAttribute="bottom" constant="20" id="X5i-B9-Og2"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="y9n-22-Xmo" secondAttribute="trailing" constant="20" id="ZsZ-7y-yWt"/>
+                <constraint firstItem="y9n-22-Xmo" firstAttribute="centerY" secondItem="MbO-ht-qmg" secondAttribute="centerY" id="dLE-W1-bZa"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="2CU-o5-504" secondAttribute="trailing" id="ffL-Ka-dAD"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="2CU-o5-504" secondAttribute="bottom" id="x9j-BA-qoh"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
         </view>
     </objects>

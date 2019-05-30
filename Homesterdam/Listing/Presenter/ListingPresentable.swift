@@ -9,13 +9,11 @@
 import Foundation
 
 protocol ListingPresentable {
-    var nextPagePath: String? { get }
+    var currentPageNumber: Int { get }
     
     init(listingService: ListingService)
     
     var shouldNotifyOnScrollToEnd: Bool { get set }
     func attach(view: ListingView)
     func didScrollToLastRows()
-    
-    func didSelect(listing: Listing)
 }
