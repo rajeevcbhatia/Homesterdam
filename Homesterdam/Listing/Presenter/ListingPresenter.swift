@@ -31,6 +31,14 @@ class ListingPresenter: ListingPresentable {
         fetchNextPage()
     }
     
+    func didToggleTuin(isOn: Bool) {
+        hasTuin = isOn
+        currentPageNumber = 1
+        listingView?.clearListings()
+        listingView?.showLoader()
+        fetchNextPage()
+    }
+    
     private func fetchNextPage() {
         shouldNotifyOnScrollToEnd = false
         

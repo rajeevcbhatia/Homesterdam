@@ -24,6 +24,7 @@ class ListingViewController: BaseViewController {
     }
     
     @IBAction func tuinSwitchValueChanged(_ sender: UISwitch) {
+        presenter.didToggleTuin(isOn: sender.isOn)
     }
     
     @IBAction func viewMakelaarsAction(_ sender: Any) {
@@ -46,6 +47,12 @@ class ListingViewController: BaseViewController {
 }
 
 extension ListingViewController: ListingView {
+    
+    func clearListings() {
+        listings.removeAll()
+        listingsTableView.reloadData()
+    }
+    
     func add(listings: [Listing]) {
         
         

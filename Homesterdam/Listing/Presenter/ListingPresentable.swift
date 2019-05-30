@@ -16,4 +16,5 @@ protocol ListingPresentable {
     var shouldNotifyOnScrollToEnd: Bool { get set }
     func attach(view: ListingView)
     func didScrollToLastRows()
+    func didToggleTuin(isOn: Bool)
 }
