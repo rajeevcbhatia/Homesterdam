@@ -31,12 +31,16 @@ class ListingPresenter: ListingPresentable {
         fetchNextPage()
     }
     
-    func didToggleTuin(isOn: Bool) {
+    func toggleTuinAction(isOn: Bool) {
         hasTuin = isOn
         currentPageNumber = 1
         listingView?.clearListings()
         listingView?.showLoader()
         fetchNextPage()
+    }
+    
+    func viewMakelaarsAction() {
+        listingView?.showMakelaars()
     }
     
     private func fetchNextPage() {

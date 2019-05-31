@@ -28,6 +28,11 @@
 		9A7D955F22A06BA600F7A89E /* ListingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A7D955D22A06BA600F7A89E /* ListingTableViewCell.xib */; };
 		9A7D956122A06BC600F7A89E /* ReuseIdentifying.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7D956022A06BC600F7A89E /* ReuseIdentifying.swift */; };
 		9A7D956322A087A100F7A89E /* URLBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7D956222A087A100F7A89E /* URLBuilder.swift */; };
+		9A7D956722A1CF9400F7A89E /* MakelaarsPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7D956622A1CF9400F7A89E /* MakelaarsPresentable.swift */; };
+		9A7D956922A1CFA100F7A89E /* MakelaarsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7D956822A1CFA100F7A89E /* MakelaarsPresenter.swift */; };
+		9A7D956C22A1D02D00F7A89E /* MakelaarsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7D956B22A1D02D00F7A89E /* MakelaarsView.swift */; };
+		9A7D956F22A1D2A100F7A89E /* MakelaarsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7D956D22A1D2A100F7A89E /* MakelaarsViewController.swift */; };
+		9A7D957022A1D2A100F7A89E /* MakelaarsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A7D956E22A1D2A100F7A89E /* MakelaarsViewController.xib */; };
 		E1D17C717106D92D699A2B0D /* libPods-HomesterdamUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C4C45CB077BAFD6A3C6A18B4 /* libPods-HomesterdamUITests.a */; };
 		F77B284E364C09AAFCBEC417 /* Pods_Homesterdam.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED58DBAE26AFBE95F796ABA1 /* Pods_Homesterdam.framework */; };
 		F8AFA2BF291F108B0CF0DFE3 /* libPods-HomesterdamTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB9883AB40DE345B208287F /* libPods-HomesterdamTests.a */; };
@@ -84,6 +89,11 @@
 		9A7D955D22A06BA600F7A89E /* ListingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListingTableViewCell.xib; sourceTree = "<group>"; };
 		9A7D956022A06BC600F7A89E /* ReuseIdentifying.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReuseIdentifying.swift; sourceTree = "<group>"; };
 		9A7D956222A087A100F7A89E /* URLBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLBuilder.swift; sourceTree = "<group>"; };
+		9A7D956622A1CF9400F7A89E /* MakelaarsPresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakelaarsPresentable.swift; sourceTree = "<group>"; };
+		9A7D956822A1CFA100F7A89E /* MakelaarsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakelaarsPresenter.swift; sourceTree = "<group>"; };
+		9A7D956B22A1D02D00F7A89E /* MakelaarsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakelaarsView.swift; sourceTree = "<group>"; };
+		9A7D956D22A1D2A100F7A89E /* MakelaarsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakelaarsViewController.swift; sourceTree = "<group>"; };
+		9A7D956E22A1D2A100F7A89E /* MakelaarsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MakelaarsViewController.xib; sourceTree = "<group>"; };
 		C4C45CB077BAFD6A3C6A18B4 /* libPods-HomesterdamUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HomesterdamUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEB9883AB40DE345B208287F /* libPods-HomesterdamTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HomesterdamTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED58DBAE26AFBE95F796ABA1 /* Pods_Homesterdam.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Homesterdam.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -142,6 +152,7 @@
 		9A7D950F229F072700F7A89E /* Homesterdam */ = {
 			isa = PBXGroup;
 			children = (
+				9A7D956422A1CF2600F7A89E /* Makelaars */,
 				9A7D953E229F0BA600F7A89E /* Base */,
 				9A7D9547229F341400F7A89E /* Listing */,
 			);
@@ -228,6 +239,34 @@
 				9A7D9559229FECB400F7A89E /* ListingViewController.xib */,
 				9A7D955C22A06BA600F7A89E /* ListingTableViewCell.swift */,
 				9A7D955D22A06BA600F7A89E /* ListingTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9A7D956422A1CF2600F7A89E /* Makelaars */ = {
+			isa = PBXGroup;
+			children = (
+				9A7D956A22A1D01C00F7A89E /* View */,
+				9A7D956522A1CF3500F7A89E /* Presenter */,
+			);
+			path = Makelaars;
+			sourceTree = "<group>";
+		};
+		9A7D956522A1CF3500F7A89E /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				9A7D956622A1CF9400F7A89E /* MakelaarsPresentable.swift */,
+				9A7D956822A1CFA100F7A89E /* MakelaarsPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		9A7D956A22A1D01C00F7A89E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9A7D956B22A1D02D00F7A89E /* MakelaarsView.swift */,
+				9A7D956D22A1D2A100F7A89E /* MakelaarsViewController.swift */,
+				9A7D956E22A1D2A100F7A89E /* MakelaarsViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -365,6 +404,7 @@
 			files = (
 				9A7D955B229FECB400F7A89E /* ListingViewController.xib in Resources */,
 				9A7D951B229F072A00F7A89E /* LaunchScreen.storyboard in Resources */,
+				9A7D957022A1D2A100F7A89E /* MakelaarsViewController.xib in Resources */,
 				9A7D955F22A06BA600F7A89E /* ListingTableViewCell.xib in Resources */,
 				9A7D9518229F072A00F7A89E /* Assets.xcassets in Resources */,
 			);
@@ -488,8 +528,12 @@
 				9A7D956122A06BC600F7A89E /* ReuseIdentifying.swift in Sources */,
 				9A7D954F229FD2B600F7A89E /* ListingNetworkService.swift in Sources */,
 				9A7D9557229FE70400F7A89E /* ListingPresenter.swift in Sources */,
+				9A7D956722A1CF9400F7A89E /* MakelaarsPresentable.swift in Sources */,
+				9A7D956F22A1D2A100F7A89E /* MakelaarsViewController.swift in Sources */,
 				9A7D9546229F2CE000F7A89E /* main.swift in Sources */,
 				9A7D9542229F0BE400F7A89E /* BaseViewController.swift in Sources */,
+				9A7D956C22A1D02D00F7A89E /* MakelaarsView.swift in Sources */,
+				9A7D956922A1CFA100F7A89E /* MakelaarsPresenter.swift in Sources */,
 				9A7D9549229F348700F7A89E /* ListingResponse.swift in Sources */,
 				9A7D9511229F072700F7A89E /* AppDelegate.swift in Sources */,
 			);

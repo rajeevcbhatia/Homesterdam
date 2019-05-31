@@ -24,10 +24,11 @@ class ListingViewController: BaseViewController {
     }
     
     @IBAction func tuinSwitchValueChanged(_ sender: UISwitch) {
-        presenter.didToggleTuin(isOn: sender.isOn)
+        presenter.toggleTuinAction(isOn: sender.isOn)
     }
     
     @IBAction func viewMakelaarsAction(_ sender: Any) {
+        presenter.viewMakelaarsAction()
     }
     
     required init(presenter: ListingPresentable) {
@@ -73,6 +74,13 @@ extension ListingViewController: ListingView {
         strongSelf.listingsTableView.setContentOffset(strongSelf.listingsTableView.contentOffset, animated: false)//to fix jump on insert rows
             strongSelf.listingsTableView.endUpdates()
         }
+    }
+    
+    func showMakelaars() {
+        let makelaarsPresenter = MakelaarsPresenter(listings: listings)
+        let makelaarsVC = MakelaarsViewController(presenter: makelaarsPresenter)
+        
+        navigationController?.pushViewController(makelaarsVC, animated: true)
     }
     
 }
