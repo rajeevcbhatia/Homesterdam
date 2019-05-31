@@ -12,6 +12,12 @@ class MakelaarsViewController: BaseViewController {
     
     private let presenter: MakelaarsPresentable
     
+    private var makelaarNameAndCount = [MakelaarNameAndCount]() {
+        didSet {
+            print(makelaarNameAndCount)
+        }
+    }
+    
     required init(presenter: MakelaarsPresentable) {
         self.presenter = presenter
         super.init(nibName: String(describing: MakelaarsViewController.self), bundle: nil)
@@ -34,10 +40,9 @@ extension MakelaarsViewController: MakelaarsView {
     
     func showMakelaars(listings: [Listing]) {
         
-        let sorted = Dictionary(grouping: listings) { $0.makelaarNaam }.mapValues { $0.count }.sorted { $0.1 > $1.1 }
+        makelaarNameAndCount = Dictionary(grouping: listings) { $0.makelaarNaam }.mapValues { $0.count }.sorted { $0.1 > $1.1 }.map { (name: $0.key, count: $0.value) }
         
-        print(sorted)
     }
 }
 
-
+typealias MakelaarNameAndCount = (name: String, count: Int)
