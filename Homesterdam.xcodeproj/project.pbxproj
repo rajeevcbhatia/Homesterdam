@@ -33,6 +33,8 @@
 		9A7D956C22A1D02D00F7A89E /* MakelaarsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7D956B22A1D02D00F7A89E /* MakelaarsView.swift */; };
 		9A7D956F22A1D2A100F7A89E /* MakelaarsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7D956D22A1D2A100F7A89E /* MakelaarsViewController.swift */; };
 		9A7D957022A1D2A100F7A89E /* MakelaarsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A7D956E22A1D2A100F7A89E /* MakelaarsViewController.xib */; };
+		9A7D957322A2E62500F7A89E /* MakelaarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7D957122A2E62500F7A89E /* MakelaarTableViewCell.swift */; };
+		9A7D957422A2E62500F7A89E /* MakelaarTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A7D957222A2E62500F7A89E /* MakelaarTableViewCell.xib */; };
 		E1D17C717106D92D699A2B0D /* libPods-HomesterdamUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C4C45CB077BAFD6A3C6A18B4 /* libPods-HomesterdamUITests.a */; };
 		F77B284E364C09AAFCBEC417 /* Pods_Homesterdam.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED58DBAE26AFBE95F796ABA1 /* Pods_Homesterdam.framework */; };
 		F8AFA2BF291F108B0CF0DFE3 /* libPods-HomesterdamTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB9883AB40DE345B208287F /* libPods-HomesterdamTests.a */; };
@@ -94,6 +96,8 @@
 		9A7D956B22A1D02D00F7A89E /* MakelaarsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakelaarsView.swift; sourceTree = "<group>"; };
 		9A7D956D22A1D2A100F7A89E /* MakelaarsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakelaarsViewController.swift; sourceTree = "<group>"; };
 		9A7D956E22A1D2A100F7A89E /* MakelaarsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MakelaarsViewController.xib; sourceTree = "<group>"; };
+		9A7D957122A2E62500F7A89E /* MakelaarTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakelaarTableViewCell.swift; sourceTree = "<group>"; };
+		9A7D957222A2E62500F7A89E /* MakelaarTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MakelaarTableViewCell.xib; sourceTree = "<group>"; };
 		C4C45CB077BAFD6A3C6A18B4 /* libPods-HomesterdamUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HomesterdamUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEB9883AB40DE345B208287F /* libPods-HomesterdamTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HomesterdamTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED58DBAE26AFBE95F796ABA1 /* Pods_Homesterdam.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Homesterdam.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -267,6 +271,8 @@
 				9A7D956B22A1D02D00F7A89E /* MakelaarsView.swift */,
 				9A7D956D22A1D2A100F7A89E /* MakelaarsViewController.swift */,
 				9A7D956E22A1D2A100F7A89E /* MakelaarsViewController.xib */,
+				9A7D957122A2E62500F7A89E /* MakelaarTableViewCell.swift */,
+				9A7D957222A2E62500F7A89E /* MakelaarTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -405,6 +411,7 @@
 				9A7D955B229FECB400F7A89E /* ListingViewController.xib in Resources */,
 				9A7D951B229F072A00F7A89E /* LaunchScreen.storyboard in Resources */,
 				9A7D957022A1D2A100F7A89E /* MakelaarsViewController.xib in Resources */,
+				9A7D957422A2E62500F7A89E /* MakelaarTableViewCell.xib in Resources */,
 				9A7D955F22A06BA600F7A89E /* ListingTableViewCell.xib in Resources */,
 				9A7D9518229F072A00F7A89E /* Assets.xcassets in Resources */,
 			);
@@ -524,6 +531,7 @@
 				9A7D9553229FE49200F7A89E /* ListingPresentable.swift in Sources */,
 				9A7D956322A087A100F7A89E /* URLBuilder.swift in Sources */,
 				9A7D955E22A06BA600F7A89E /* ListingTableViewCell.swift in Sources */,
+				9A7D957322A2E62500F7A89E /* MakelaarTableViewCell.swift in Sources */,
 				9A7D9544229F2AD600F7A89E /* Networking.swift in Sources */,
 				9A7D956122A06BC600F7A89E /* ReuseIdentifying.swift in Sources */,
 				9A7D954F229FD2B600F7A89E /* ListingNetworkService.swift in Sources */,

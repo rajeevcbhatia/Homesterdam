@@ -47,7 +47,7 @@
                     </connections>
                 </button>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="2CU-o5-504">
-                    <rect key="frame" x="0.0" y="139.5" width="414" height="722.5"/>
+                    <rect key="frame" x="0.0" y="139.5" width="414" height="756.5"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </tableView>
             </subviews>
@@ -60,7 +60,7 @@
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="y9n-22-Xmo" secondAttribute="trailing" constant="20" id="ZsZ-7y-yWt"/>
                 <constraint firstItem="y9n-22-Xmo" firstAttribute="centerY" secondItem="MbO-ht-qmg" secondAttribute="centerY" id="dLE-W1-bZa"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="2CU-o5-504" secondAttribute="trailing" id="ffL-Ka-dAD"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="2CU-o5-504" secondAttribute="bottom" id="x9j-BA-qoh"/>
+                <constraint firstAttribute="bottom" secondItem="2CU-o5-504" secondAttribute="bottom" id="x9j-BA-qoh"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
         </view>

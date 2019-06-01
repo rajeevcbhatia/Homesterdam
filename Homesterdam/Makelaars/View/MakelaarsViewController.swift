@@ -10,11 +10,21 @@ import UIKit
 
 class MakelaarsViewController: BaseViewController {
     
+    private let cellHeight: CGFloat = 75.0
+    
+    @IBOutlet weak var makelaarsTableView: UITableView! {
+        didSet {
+            makelaarsTableView.register(UINib(nibName: String(describing: MakelaarTableViewCell.self), bundle: nil), forCellReuseIdentifier: MakelaarTableViewCell.reuseIdentifier)
+            makelaarsTableView.dataSource = self
+            makelaarsTableView.delegate = self
+        }
+    }
+    
     private let presenter: MakelaarsPresentable
     
-    private var makelaarNameAndCount = [MakelaarNameAndCount]() {
+    private var makelaarsNameAndCount = [MakelaarNameAndCount]() {
         didSet {
-            print(makelaarNameAndCount)
+            makelaarsTableView.reloadData()
         }
     }
     
@@ -40,9 +50,33 @@ extension MakelaarsViewController: MakelaarsView {
     
     func showMakelaars(listings: [Listing]) {
         
-        makelaarNameAndCount = Dictionary(grouping: listings) { $0.makelaarNaam }.mapValues { $0.count }.sorted { $0.1 > $1.1 }.map { (name: $0.key, count: $0.value) }
+        makelaarsNameAndCount = Dictionary(grouping: listings) { $0.makelaarNaam }.mapValues { $0.count }.sorted { $0.1 > $1.1 }.map { (name: $0.key, count: $0.value) }
         
     }
+}
+
+extension MakelaarsViewController: UITableViewDataSource, UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return makelaarsNameAndCount.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        guard let cell = makelaarsTableView.dequeueReusableCell(withIdentifier: MakelaarTableViewCell.reuseIdentifier, for: indexPath) as? MakelaarTableViewCell else {
+            return UITableViewCell()
+        }
+        
+        cell.makelaar = makelaarsNameAndCount[indexPath.row]
+        
+        return cell
+        
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return cellHeight
+    }
+    
 }
 
 typealias MakelaarNameAndCount = (name: String, count: Int)

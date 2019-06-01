@@ -9,7 +9,7 @@
 import UIKit
 import SDWebImage
 
-class ListingTableViewCell: UITableViewCell, ReuseIdentifying {
+class ListingTableViewCell: UITableViewCell, ReuseIdentifiable {
 
     @IBOutlet weak var homeImgView: UIImageView!
     

@@ -1,5 +1,5 @@
 //
-//  ReuseIdentifying.swift
+//  ReuseIdentifiable.swift
 //  Homesterdam
 //
 //  Created by Rajeev Bhatia on 30/05/19.
@@ -8,11 +8,11 @@
 
 import Foundation
 
-protocol ReuseIdentifying {
+protocol ReuseIdentifiable {
     static var reuseIdentifier: String { get }
 }
 
-extension ReuseIdentifying {
+extension ReuseIdentifiable {
     static var reuseIdentifier: String {
         return String(describing: Self.self)
     }
