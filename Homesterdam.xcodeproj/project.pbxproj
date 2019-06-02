@@ -37,6 +37,7 @@
 		9A7D957722A2F78C00F7A89E /* MockListingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7D957622A2F78C00F7A89E /* MockListingService.swift */; };
 		9A7D957922A318BE00F7A89E /* ListingPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7D957822A318BE00F7A89E /* ListingPresenterTests.swift */; };
 		9A7D957B22A3262B00F7A89E /* ListingViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7D957A22A3262B00F7A89E /* ListingViewControllerTests.swift */; };
+		9A7D957E22A3E45200F7A89E /* MakelaarsViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7D957D22A3E45200F7A89E /* MakelaarsViewControllerTests.swift */; };
 		E1D17C717106D92D699A2B0D /* libPods-HomesterdamUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C4C45CB077BAFD6A3C6A18B4 /* libPods-HomesterdamUITests.a */; };
 		F77B284E364C09AAFCBEC417 /* Pods_Homesterdam.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED58DBAE26AFBE95F796ABA1 /* Pods_Homesterdam.framework */; };
 		F8AFA2BF291F108B0CF0DFE3 /* libPods-HomesterdamTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB9883AB40DE345B208287F /* libPods-HomesterdamTests.a */; };
@@ -102,6 +103,7 @@
 		9A7D957622A2F78C00F7A89E /* MockListingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockListingService.swift; sourceTree = "<group>"; };
 		9A7D957822A318BE00F7A89E /* ListingPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingPresenterTests.swift; sourceTree = "<group>"; };
 		9A7D957A22A3262B00F7A89E /* ListingViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingViewControllerTests.swift; sourceTree = "<group>"; };
+		9A7D957D22A3E45200F7A89E /* MakelaarsViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakelaarsViewControllerTests.swift; sourceTree = "<group>"; };
 		C4C45CB077BAFD6A3C6A18B4 /* libPods-HomesterdamUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HomesterdamUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEB9883AB40DE345B208287F /* libPods-HomesterdamTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HomesterdamTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED58DBAE26AFBE95F796ABA1 /* Pods_Homesterdam.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Homesterdam.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -170,6 +172,7 @@
 		9A7D9524229F072A00F7A89E /* HomesterdamTests */ = {
 			isa = PBXGroup;
 			children = (
+				9A7D957C22A3E40B00F7A89E /* MakelaarTests */,
 				9A7D957522A2F77500F7A89E /* ListingTests */,
 				9A7D9527229F072A00F7A89E /* Info.plist */,
 			);
@@ -289,6 +292,14 @@
 				9A7D957A22A3262B00F7A89E /* ListingViewControllerTests.swift */,
 			);
 			path = ListingTests;
+			sourceTree = "<group>";
+		};
+		9A7D957C22A3E40B00F7A89E /* MakelaarTests */ = {
+			isa = PBXGroup;
+			children = (
+				9A7D957D22A3E45200F7A89E /* MakelaarsViewControllerTests.swift */,
+			);
+			path = MakelaarTests;
 			sourceTree = "<group>";
 		};
 		C04384D2BBC46D353BE476CF /* Pods */ = {
@@ -566,6 +577,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A7D957E22A3E45200F7A89E /* MakelaarsViewControllerTests.swift in Sources */,
 				9A7D957722A2F78C00F7A89E /* MockListingService.swift in Sources */,
 				9A7D957922A318BE00F7A89E /* ListingPresenterTests.swift in Sources */,
 				9A7D957B22A3262B00F7A89E /* ListingViewControllerTests.swift in Sources */,
