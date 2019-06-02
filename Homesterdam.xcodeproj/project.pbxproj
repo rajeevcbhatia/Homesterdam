@@ -10,7 +10,6 @@
 		9A7D9511229F072700F7A89E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7D9510229F072700F7A89E /* AppDelegate.swift */; };
 		9A7D9518229F072A00F7A89E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A7D9517229F072A00F7A89E /* Assets.xcassets */; };
 		9A7D951B229F072A00F7A89E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A7D9519229F072A00F7A89E /* LaunchScreen.storyboard */; };
-		9A7D9526229F072A00F7A89E /* HomesterdamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7D9525229F072A00F7A89E /* HomesterdamTests.swift */; };
 		9A7D9531229F072A00F7A89E /* HomesterdamUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7D9530229F072A00F7A89E /* HomesterdamUITests.swift */; };
 		9A7D9540229F0BB900F7A89E /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7D953F229F0BB900F7A89E /* BaseView.swift */; };
 		9A7D9542229F0BE400F7A89E /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7D9541229F0BE400F7A89E /* BaseViewController.swift */; };
@@ -35,6 +34,9 @@
 		9A7D957022A1D2A100F7A89E /* MakelaarsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A7D956E22A1D2A100F7A89E /* MakelaarsViewController.xib */; };
 		9A7D957322A2E62500F7A89E /* MakelaarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7D957122A2E62500F7A89E /* MakelaarTableViewCell.swift */; };
 		9A7D957422A2E62500F7A89E /* MakelaarTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A7D957222A2E62500F7A89E /* MakelaarTableViewCell.xib */; };
+		9A7D957722A2F78C00F7A89E /* MockListingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7D957622A2F78C00F7A89E /* MockListingService.swift */; };
+		9A7D957922A318BE00F7A89E /* ListingPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7D957822A318BE00F7A89E /* ListingPresenterTests.swift */; };
+		9A7D957B22A3262B00F7A89E /* ListingViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7D957A22A3262B00F7A89E /* ListingViewControllerTests.swift */; };
 		E1D17C717106D92D699A2B0D /* libPods-HomesterdamUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C4C45CB077BAFD6A3C6A18B4 /* libPods-HomesterdamUITests.a */; };
 		F77B284E364C09AAFCBEC417 /* Pods_Homesterdam.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED58DBAE26AFBE95F796ABA1 /* Pods_Homesterdam.framework */; };
 		F8AFA2BF291F108B0CF0DFE3 /* libPods-HomesterdamTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB9883AB40DE345B208287F /* libPods-HomesterdamTests.a */; };
@@ -70,7 +72,6 @@
 		9A7D951A229F072A00F7A89E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9A7D951C229F072A00F7A89E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A7D9521229F072A00F7A89E /* HomesterdamTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HomesterdamTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9A7D9525229F072A00F7A89E /* HomesterdamTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomesterdamTests.swift; sourceTree = "<group>"; };
 		9A7D9527229F072A00F7A89E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A7D952C229F072A00F7A89E /* HomesterdamUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HomesterdamUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A7D9530229F072A00F7A89E /* HomesterdamUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomesterdamUITests.swift; sourceTree = "<group>"; };
@@ -98,6 +99,9 @@
 		9A7D956E22A1D2A100F7A89E /* MakelaarsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MakelaarsViewController.xib; sourceTree = "<group>"; };
 		9A7D957122A2E62500F7A89E /* MakelaarTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakelaarTableViewCell.swift; sourceTree = "<group>"; };
 		9A7D957222A2E62500F7A89E /* MakelaarTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MakelaarTableViewCell.xib; sourceTree = "<group>"; };
+		9A7D957622A2F78C00F7A89E /* MockListingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockListingService.swift; sourceTree = "<group>"; };
+		9A7D957822A318BE00F7A89E /* ListingPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingPresenterTests.swift; sourceTree = "<group>"; };
+		9A7D957A22A3262B00F7A89E /* ListingViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingViewControllerTests.swift; sourceTree = "<group>"; };
 		C4C45CB077BAFD6A3C6A18B4 /* libPods-HomesterdamUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HomesterdamUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEB9883AB40DE345B208287F /* libPods-HomesterdamTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HomesterdamTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED58DBAE26AFBE95F796ABA1 /* Pods_Homesterdam.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Homesterdam.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -166,7 +170,7 @@
 		9A7D9524229F072A00F7A89E /* HomesterdamTests */ = {
 			isa = PBXGroup;
 			children = (
-				9A7D9525229F072A00F7A89E /* HomesterdamTests.swift */,
+				9A7D957522A2F77500F7A89E /* ListingTests */,
 				9A7D9527229F072A00F7A89E /* Info.plist */,
 			);
 			path = HomesterdamTests;
@@ -277,6 +281,16 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		9A7D957522A2F77500F7A89E /* ListingTests */ = {
+			isa = PBXGroup;
+			children = (
+				9A7D957622A2F78C00F7A89E /* MockListingService.swift */,
+				9A7D957822A318BE00F7A89E /* ListingPresenterTests.swift */,
+				9A7D957A22A3262B00F7A89E /* ListingViewControllerTests.swift */,
+			);
+			path = ListingTests;
+			sourceTree = "<group>";
+		};
 		C04384D2BBC46D353BE476CF /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -375,6 +389,7 @@
 					};
 					9A7D9520229F072A00F7A89E = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 						TestTargetID = 9A7D950C229F072700F7A89E;
 					};
 					9A7D952B229F072A00F7A89E = {
@@ -551,7 +566,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A7D9526229F072A00F7A89E /* HomesterdamTests.swift in Sources */,
+				9A7D957722A2F78C00F7A89E /* MockListingService.swift in Sources */,
+				9A7D957922A318BE00F7A89E /* ListingPresenterTests.swift in Sources */,
+				9A7D957B22A3262B00F7A89E /* ListingViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -748,6 +765,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = HomesterdamTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -757,6 +775,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.rajeev.HomesterdamTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Homesterdam.app/Homesterdam";
@@ -769,6 +788,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = HomesterdamTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

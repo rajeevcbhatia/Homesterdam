@@ -21,11 +21,9 @@ struct ListingResponse: Codable {
 
 // MARK: - Object
 struct Listing: Codable {
-    let aangebodenSindsTekst: String
     let aantalKamers: Int
     let adres: String
-    let foto, fotoMedium: String
-    let globalID: Int
+    let fotoMedium: String
     let id: String
     let koopprijs: Int
     let makelaarID: Int
@@ -33,35 +31,27 @@ struct Listing: Codable {
     let postcode: String
     let url: String
     let woonoppervlakte: Int
-    let verkoopStatus: String
     let woonplaats: String
     
     enum CodingKeys: String, CodingKey {
-        case aangebodenSindsTekst = "AangebodenSindsTekst"
         case aantalKamers = "AantalKamers"
         case adres = "Adres"
-        case foto = "Foto"
         case fotoMedium = "FotoMedium"
-        case globalID = "GlobalId"
         case id = "Id"
         case koopprijs = "Koopprijs"
         case makelaarID = "MakelaarId"
         case makelaarNaam = "MakelaarNaam"
         case postcode = "Postcode"
         case url = "URL"
-        case verkoopStatus = "VerkoopStatus"
         case woonoppervlakte = "Woonoppervlakte"
         case woonplaats = "Woonplaats"
     }
 }
 
 struct Paging: Codable {
-    let aantalPaginas, huidigePagina: Int
     let volgendeURL: String?
     
     enum CodingKeys: String, CodingKey {
-        case aantalPaginas = "AantalPaginas"
-        case huidigePagina = "HuidigePagina"
         case volgendeURL = "VolgendeUrl"
     }
 }
